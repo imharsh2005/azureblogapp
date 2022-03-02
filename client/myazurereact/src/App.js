@@ -51,10 +51,10 @@ class App extends Component {
   };
 
   deleteArticles = () => {
-    const doDelete = window.confirm('Delete all Thoughts?');
+    const doDelete = window.confirm('Delete all data?');
     if (!doDelete) return;
     axios
-      .delete('/api/thoughts/')
+      .delete('/api/articles/')
       .then(res => this.setState({ articles: [] }))
       .catch(err => alert(`Failed to delete all articles\n${JSON.stringify(err)}`));
   };

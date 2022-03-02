@@ -1,7 +1,7 @@
 {
   "name": "azureapp",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "license": "MIT",
   "scripts": {
     "start": "cd client/myazurereact && yarn && yarn run build && cd ../.. && node server",
